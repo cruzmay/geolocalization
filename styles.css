@@ -51,12 +51,12 @@ body {
     height: 88px;
     font-family: "Gotham Medium", "Helvetica";
 }
-.upper_service__title {
+.upper_menu th:nth-child(1) {
     text-align: left;
     font-size: 26px;
     width: 40%;
 }
-.location_title {
+.upper_menu th {
     text-align: center;
     font-size: 18px;
     padding: 0 5px;
