@@ -27,18 +27,27 @@ body {
 /* .available_services_table td {
     text-align: center;
 } */
-
+.table_container {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 90%;
+}
 .available_services_table {
     max-width: 1200px;
     width: 100%;
+    margin: auto;
 }
 
 .upper_menu th {
     background-color: white;
     position: sticky;
-    /* box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px; */
     max-width: 1200px;
-    top: 2px;
+    top: 0px;
+}
+
+.shadow th {
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    /* border-bottom: 1px solid #e7eaec; */
 }
 
 .available_services_table td img {
@@ -49,30 +58,31 @@ body {
 
 .upper_service__title, .location_title {
     height: 88px;
-    font-family: "Gotham Medium", "Helvetica";
 }
 .upper_menu th:nth-child(1) {
     text-align: left;
-    font-size: 26px;
+    font-size: 24px;
     width: 40%;
+    padding: 0;
+    /* top: 8px; */
 }
 .upper_menu th {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 5px;
 }
 
-.service_line__title, 
-.highlighted_item_start, 
-.highlighted_item_end, 
-.highlighted_item, 
-.clear__item {
-    border-bottom: 1px solid lightgray ;
+.serv_row td {
+    border-bottom: 1px solid #d1d3d4 ;
     height: 60px;
+}
+.serv_row:last-child td {
+    border-bottom: none;
+    margin-bottom: 20px;
 }
 
 .service_line__title {
-    font-size: 18px;
+    font-size: 16px;
     width: 40%;
 }
 
@@ -109,6 +119,15 @@ body {
     align-items: center;
     border-radius: 0 0 30px 30px ;
 }
+.highlighted_item_isolate div {
+    background-color: rgba(200, 241, 249, .5);
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
 .clear__item div {
     height: 100%;
     width: 34px;
@@ -118,7 +137,7 @@ body {
 }
 
 .locations__dropdown {
-    width: 99%;
+    width: 90%;
     max-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -147,9 +166,7 @@ body {
     margin-left: 30px;
     font-size: 16px;
     color: #28424b;
-    font-family: "Gotham Medium",
-        "Helvetica";
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .locations__dropdown i img {
@@ -221,4 +238,25 @@ body {
 }
 .icon_hide {
     display: none;
+}
+ .mobile_table {
+     display: none;
+ }
+ .show_dropdown {
+    display: none;
+ }
+
+@media (max-width: 756px) {
+    .show_dropdown {
+    display: block;
+    }
+    .mobile_table {
+        display: block;
+    }
+    .desktop_table {
+        display: none;
+    }
+    .service_line__title {
+        width: 100%;
+    }
 }

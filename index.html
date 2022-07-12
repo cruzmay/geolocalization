@@ -7,9 +7,9 @@
     <title>Document</title>
   </head>
   <body style="display: flex; align-items: center; flex-direction: column">
-    <!-- <div style="background: gray; width: 100%; height: 1000px"></div> -->
+    <div style="background: gray; width: 100%; height: 2000px"></div>
 
-    <div class="locations__dropdown">
+    <div class="locations__dropdown show_dropdown">
       <div class="locations_selector">
         <p>Choose Location</p>
         <i><img src="./assets/SVG/caret.svg" alt="caret" /></i>
@@ -25,152 +25,30 @@
         </ul>
       </div>
     </div>
-
-    <table
-      class="available_services_table"
-      cellborder="0"
-      cellpadding="0"
-      cellspacing="0"
-    >
-      <tr>
-        <thead class="upper_menu">
-          <th class="upper_service__title">Service Line</th>
-          <!-- <th class="location_title">Portland</th>
-          <th class="location_title">Eugene</th>
-          <th class="location_title">Salem</th>
-          <th class="location_title">Vancouver</th>
-          <th class="location_title">Seattle</th>
-          <th class="location_title">Idaho</th>
-          <th class="location_title">Colorado</th> -->
+    <div class="table_container">
+      <table
+        class="available_services_table desktop_table"
+        cellborder="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <thead class="upper_menu desktop_menu">
+          <!--Table goes here -->
         </thead>
-      </tr>
-      <tr>
-        <td class="service_line__title">Urgent Care</td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_start" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="service_line__title">Primary Care</td>
-        <td class="highlighted_item" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_end" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_end" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_end" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item_end" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="service_line__title">Emergency Care</td>
-        <td class="highlighted_item" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="clear__item" align="center">
-          <div>
-            <img
-              src="./assets/SVG/noAvaliable.svg"
-              alt="no available service"
-            />
-          </div>
-        </td>
-        <td class="highlighted_item" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="highlighted_item" align="center">
-          <div>
-            <img src="./assets/SVG/available.svg" alt="available service" />
-          </div>
-        </td>
-        <td class="clear__item" align="center">
-          <div>
-            <img
-              src="./assets/SVG/noAvaliable.svg"
-              alt="no available service"
-            />
-          </div>
-        </td>
-        <td class="clear__item" align="center">
-          <div>
-            <img
-              src="./assets/SVG/noAvaliable.svg"
-              alt="no available service"
-            />
-          </div>
-        </td>
-        <td class="clear__item" align="center">
-          <div>
-            <img
-              src="./assets/SVG/noAvaliable.svg"
-              alt="no available service"
-            />
-          </div>
-        </td>
-      </tr>
-    </table>
+      </table>
+      <!--mobile table-->
+      <table
+        class="available_services_table mobile_table"
+        cellborder="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <thead class="upper_menu mobile_menu">
+          <!--Table goes here -->
+        </thead>
+      </table>
+    </div>
+
     <div style="background: gray; width: 100%; height: 2000px"></div>
     <script src="./index.js"></script>
   </body>
